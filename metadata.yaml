@@ -4,4 +4,4 @@ desc: 管理员通过群组 ID 或用户 ID 黑白名单控制 LLM 对话权限�
 version: v1.2.0
 author: cruseth
 repo: https://github.com/cruseth/astrbot_plugin_llm_acl
-astrbot_version: ">=4.16,<5"
+astrbot_version: ">=4.16"
