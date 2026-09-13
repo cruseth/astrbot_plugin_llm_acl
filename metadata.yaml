@@ -1,6 +1,7 @@
 name: astrbot_plugin_llm_session_acl
-display_name: 群组/用户 LLM 开关控制
-desc: 管理员通过群组或用户 ID 黑白名单控制 LLM 开关
-version: v1.1.0
-author: yuanh
-repo: local
+display_name: 群组/用户 LLM 黑白名单与会话控制
+desc: 管理员通过群组 ID 或用户 ID 黑白名单控制 LLM 对话权限，支持群聊/私聊独立默认策略及未授权提示定时撤回
+version: v1.2.0
+author: cruseth
+repo: https://github.com/cruseth/astrbot_plugin_llm_acl
+astrbot_version: ">=4.16,<5"

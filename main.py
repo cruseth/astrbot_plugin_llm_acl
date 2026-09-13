@@ -13,7 +13,7 @@ from astrbot.api.star import Context, Star, register
 RecallCallback = Callable[[], Awaitable[None]]
 
 
-@register("astrbot_plugin_llm_session_acl", "yuanh", "群组/用户级 LLM 黑白名单控制", "v1.2.0")
+@register("astrbot_plugin_llm_session_acl", "cruseth", "群组/用户级 LLM 黑白名单与会话控制", "v1.2.0")
 class LLMSessionACLPlugin(Star):
     """按群组 ID 或用户 ID 控制 LLM 访问。
 
