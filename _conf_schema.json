@@ -1,0 +1,49 @@
+{
+  "admin_users": {
+    "description": "额外管理员用户 ID 列表",
+    "type": "list",
+    "hint": "除平台管理员外，允许操作 llmacl 命令的用户 ID",
+    "default": []
+  },
+  "default_group_enabled": {
+    "description": "群聊默认是否开启 LLM",
+    "type": "bool",
+    "default": true
+  },
+  "default_private_enabled": {
+    "description": "私聊默认是否开启 LLM",
+    "type": "bool",
+    "default": true
+  },
+  "unauthorized_notice_enabled": {
+    "description": "未授权会话提示",
+    "type": "bool",
+    "hint": "关闭后，ACL 仍会阻止未授权 LLM 请求，但不发送提示消息。",
+    "default": true
+  },
+  "unauthorized_notice_message": {
+    "description": "未授权会话提示内容",
+    "type": "text",
+    "hint": "未授权会话首次请求 LLM 时发送；留空可禁用提示。",
+    "default": "当前会话未获 LLM 使用授权，请联系管理员。"
+  },
+  "unauthorized_notice_recall_delay_seconds": {
+    "description": "未授权提示自动撤回延时（秒）",
+    "type": "int",
+    "hint": "0 为关闭；正整数时在发送后自动撤回。当前可靠支持 OneBot/aiocqhttp 和 Telegram，其他平台保留提示但不自动撤回。",
+    "min": 0,
+    "default": 0
+  },
+  "black_ids": {
+    "description": "黑名单 ID（强制关闭 LLM）",
+    "type": "list",
+    "hint": "直接填写群组 ID 或用户 ID。群聊只检查群组 ID；私聊检查发送者用户 ID。",
+    "default": []
+  },
+  "white_ids": {
+    "description": "白名单 ID（强制开启 LLM）",
+    "type": "list",
+    "hint": "直接填写群组 ID 或用户 ID。群聊只检查群组 ID；私聊检查发送者用户 ID。",
+    "default": []
+  }
+}

@@ -1,0 +1,6 @@
+name: astrbot_plugin_llm_session_acl
+display_name: 群组/用户 LLM 开关控制
+desc: 管理员通过群组或用户 ID 黑白名单控制 LLM 开关
+version: v1.1.0
+author: yuanh
+repo: local
